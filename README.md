@@ -15,17 +15,17 @@ For example, in the case of the Moodle example, you can write something like thi
 
 We tested the quiz module that allows for creating and taking quizzes. We chose to test the following user stories: 
 
-*User story:* A teacher adds a new quiz to the course with two yes/no questions
+*User story:* A user tries to add product to his wishlist
 
-*Preconditions:* There is a course with a teacher
+*Preconditions:* there is a logged in user and at least one product in the system
 
-*Expected outcome:* The quiz is added to the course.
+*Expected outcome:* the product is added to the user's wishlist.
 
-*User story:* A students attempts a quiz and answers correctly.
+*User story:* user wnts to register the website.
 
-*Preconditions:* There is a course with a quiz with two yes/no questions and the quiz grade is calculated automatically and the grade is visible to the students upon submission.
+*Preconditions:* none.
 
-*Expected outcome:* The student receives 100.
+*Expected outcome:* user registered and logged in successfuly.
 $$
 
 ## How we tested
