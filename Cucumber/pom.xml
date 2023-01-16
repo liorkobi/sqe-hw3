@@ -7,6 +7,10 @@
     <groupId>SQE</groupId>
     <artifactId>Demo_Test</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <cucumber.version>4.3.1</cucumber.version>
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
@@ -39,7 +43,6 @@
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-jvm-deps</artifactId>
             <version>1.0.5</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
@@ -48,6 +51,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+
     <build>
         <plugins>
             <plugin>

@@ -31,6 +31,7 @@ public class SimplCommerceActuator {
         // maximize the window - some web apps look different in different sizes
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//*[@id=\"cookieConsent\"]/div/div/div/button")).click();
+        driver.findElement(By.xpath("/html/body/div[4]/div[5]/form/div/div[3]/button")).click();
 
 
 
@@ -68,7 +69,7 @@ public class SimplCommerceActuator {
         long timeoutInSeconds=(long) 40;
 
         this.wait = new WebDriverWait(driver, timeoutInSeconds);
-        driver.findElement(By.xpath("/html/body/div[6]/div/div/div[3]/a")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"shopModal\"]/div/div/div[3]/a"))).click();
     }
 
     public void goToLogIn() {
@@ -99,11 +100,15 @@ public class SimplCommerceActuator {
         driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/ul/li[2]/ul/li[1]/a\n")).click();
     }
         public void DeleteProduct(String product) {
-            driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody[1]/tr[18]/td[10]/button[2]")).click();
+        WebDriverWait wait=new WebDriverWait(driver, 40);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/table/tbody[1]/tr[19]/td[10]/button[2]"))).click();
 
         }
 
     public void ClickOnOK() {
+        WebDriverWait wait=new WebDriverWait(driver, 40);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/div/div[2]/button[2]"))).click();
+
     }
 
 

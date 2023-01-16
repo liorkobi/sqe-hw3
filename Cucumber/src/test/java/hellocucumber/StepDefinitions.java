@@ -55,6 +55,48 @@ public class StepDefinitions {
         terminate();
     }
 
+    //---------------------------------compere--------------------------
+
+    @Given("^Admin user is logged in$")
+    public void AdminLogIn(){
+        moodle.goToLogIn();
+        moodle.EnterLogInInfo("","");
+    }
+
+    @When("^User Navigate to Dashboard Page$")
+    public void DashboardNavigate(){
+        moodle.GoToDashboard();
+    }
+
+    @And("^User click on Add to Catalog menu$")
+    public void CatalogMenu(){
+        moodle.openCatalog();
+    }
+    @And("^User click on Products$")
+    public void Products(){
+        moodle.productInCatalog();
+    }
+    @And("^User click on Delete product$")
+    public void DeleteProduct(){
+        moodle.DeleteProduct("");
+    }
+    @And("^User click on Ok$")
+    public void OK(){
+        moodle.ClickOnOK();
+    }
+
+    @Then("^Message displayed The product has been deleted$")
+    public void DeletemessageDisplayed(){
+        System.out.println("Message displayed Successfully");
+    }
+
+
+
+
+
+
+
+
     private void terminate(){
         System.out.println("in terminate");
         for(SimplCommerceActuator m : allMoodles)
