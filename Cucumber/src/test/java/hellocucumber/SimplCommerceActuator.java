@@ -15,6 +15,7 @@ public class SimplCommerceActuator {
     public void initSession(String webDriver, String path){
         webDriver = "webdriver.chrome.driver";
         path = "C:\\Users\\Owner\\Desktop\\selenium\\chromedriver.exe";
+//        path = "C:\\Users\\Liork\\s\\chromedriver.exe";
         System.setProperty(webDriver, path);
 
         // new chrome driver object
