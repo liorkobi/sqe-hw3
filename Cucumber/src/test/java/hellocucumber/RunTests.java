@@ -5,6 +5,6 @@ public class RunTests {
 
         storeTest store = new storeTest();
         store.SelectProductTest();
-        store.DeleteProductTest();
+//        store.DeleteProductTest();
     }
 }

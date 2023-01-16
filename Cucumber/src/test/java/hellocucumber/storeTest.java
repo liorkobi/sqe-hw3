@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/hellocucumber")
+@CucumberOptions(features = "src/test/java/features")
 
 
 public class storeTest {
@@ -16,7 +16,7 @@ public class storeTest {
 
     private SimplCommerceActuator store;
     private String webDriver = "webdriver.chrome.driver";
-    private String path = "C:\\Users\\liork\\s\\chromedriver.exe";
+    private String path = "C:\\Users\\Owner\\Desktop\\selenium\\chromedriver.exe";
 
     public storeTest() {
         store = new SimplCommerceActuator();

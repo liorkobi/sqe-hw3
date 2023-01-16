@@ -14,7 +14,7 @@ public class StepDefinitions {
     private static List<SimplCommerceActuator> allMoodles;
     private static SimplCommerceActuator moodle;
     private String webDriver = "webdriver.chrome.driver";
-    private String path = "C:\\Users\\liork\\s\\chromedriver.exe";
+    private String path = "C:\\Users\\Owner\\Desktop\\selenium\\chromedriver.exe";
 
 
     public void moodleInit() {
@@ -60,7 +60,7 @@ public class StepDefinitions {
     @Given("^Admin user is logged in$")
     public void AdminLogIn(){
         moodle.goToLogIn();
-        moodle.EnterLogInInfo("","");
+        moodle.EnterLogInInfo("admin@simplcommerce.com","1qazZAQ!");
     }
 
     @When("^User Navigate to Dashboard Page$")
