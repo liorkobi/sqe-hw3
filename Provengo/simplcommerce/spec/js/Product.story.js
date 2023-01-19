@@ -64,20 +64,3 @@ story('user add product to compare after admin delete a product', function () {
     })
 })
 
-
-// story('deleteall2', function () {
-//     with(new SeleniumSession().start('http://localhost:5000/')){
-//         on(Any('StartOfAction').and(Any({eventName:"AddProductToCompare"})),function (){
-//             interrupt(Any('StartOfAction').and(Any({eventName: "DeleteProduct"})), function () {
-//                 initSession()
-//         })
-//         })
-//     }})
-// story('deleteall1', function () {
-//     with(new SeleniumSession().start('http://localhost:5000/')){
-//         on(Any('StartOfAction').and(Any({eventName:"DeleteProduct"})),function (){
-//             interrupt(Any('StartOfAction').and(Any({eventName: "AddProductToCompare"})), function () {
-//                 initSession()
-//         })
-//         })
-//     }})

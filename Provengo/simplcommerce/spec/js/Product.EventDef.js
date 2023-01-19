@@ -1,12 +1,5 @@
 /* @Provengo summon selenium */
 
-/**
- *  The ComposeQuery event defines the selenium actions for writing the query that was given in the parameter e.
- */
-// defineEvent(SeleniumSession, "InitSession", function(session) {
-//   // session.click("//*[@id=\"cookieConsent\"]/div/div/div/button");
-//   //   session.click("/html/body/div[4]/div[5]/form/div/div[3]/button");
-// })
 
 
 /**
