@@ -12,4 +12,6 @@ $$*TODO*: Make sure that the text inside the feature files is informative and se
 ## Step files
 The step files in the [src/test/java/hellocucumber](src/test/java/hellocucumber) directory contain the code that defines how each sentence in the feature files is translated to Selenium actions. See the files for a detailed description of the implementation.
 
-$$*TODO* Make sure that each step is documented and properly writen (meaningful variable names, no magic number, etc.). See the [StepDefinitions.java](src/test/java/hellocucumber/StepDefinitions.java) file for an example.$$
+## bugs
+1 bug was found - when a user adds a product to its compare list, then the admin delete the product from the store the product doesn't disappear from the compare list. 
+for this reason the third scenario in the feature file fails. 
